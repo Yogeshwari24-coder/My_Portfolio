@@ -124,56 +124,101 @@ html {
     transform: translateY(50px);
     transition: all 0.8s ease-out;
 }
-/* Mobile Screens (Width < 600px) */
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
     .nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        height: auto;
+        align-items: flex-start;
+        padding: 20px;
     }
-
+    
+    .about {
+        margin: 20px;
+        height: auto;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .about p {
+        font-size: 1.1rem;
+    }
+    
     .main {
         flex-direction: column;
         align-items: center;
     }
+    
+    .photo {
+        width: 90vw;
+        height: 250px; 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 20px 0;
+                
+    }  
+    .main p {
+        width: 90vw;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .skills {
+        margin: 80px 20px 0 20px;
+    }
+    
+    .skill_container {
+        flex-direction: row;
+        align-items: center;        
+    }
 
-    .photo, .skill_photo, .con_photo {
-        width: 90%;
+    .skill_photo {
+        width: 90vw;
+        height: 250px;
+        margin: 40px 10px ;
+    }
+    
+    .achievement_cont {
+        margin: 40px 20px;
+    }
+    
+    .achieve {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
         height: auto;
     }
-
-    .main p {
-        width: 90%;
-        text-align: center;
-        margin: 10px 0;
+    
+    .certi1, .certi2 {
+        width: 90vw;
+        height: 250px;
+        margin: 20px 0;
     }
-}
-
-/* Tablet Screens (600px - 1024px) */
-@media screen and (max-width: 1024px) {
-    .nav {
-        font-size: 1rem;
+    
+    .contact_details {
+        margin: 60px 20px;
     }
-
-    .skill_container {
+    
+    .cont_con {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
-
-    .achievement_cont {
-        width: 100%;
-        text-align: center;
+    
+    .con_photo {
+        width: 90vw;
+        height: 250px;
+        margin: 30px 0;
+        transform: rotate(-9deg);
     }
-}
-@media screen and (max-width: 768px) {
-    .name {
-        font-size: 2rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
-
+    
     .contact_details h1 {
-        font-size: 1.5rem;
+        margin-bottom: 30px;
     }
+    .photo, .skill_photo, .con_photo {
+        background-size: cover;
+    }
+    
 }
