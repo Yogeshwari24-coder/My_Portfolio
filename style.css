@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+body {
+    background-color: black;
+    height: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav {
+    height: 100px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav a {
+    text-decoration: none;
+}
+.about {
+    margin: 0px 0px 0px 70px;
+    height: 300px;
+
+}
+.name {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.about p {
+    font-size: 1.5rem;
+}
+.main {
+    display: flex;
+}
+.photo {
+    height: 350px;
+    width: 500px;
+    margin: 30px 0px 0px 0px;
+    background-image: url("Templates/img0.jpeg");
+    background-size: cover;
+    background-color: white;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+.main p {
+    font-size: 0.85rem;
+    width: 400px;
+    margin: 50px 0px 0px 50px;
+}
+/* skills section */
+.skills {
+    margin: 300px 0px 0px 70px;
+}
+.skills ul {
+    margin: 10px 0px 0px 30px;
+}
+.skill_container {
+    display: flex;
+    
+}
+.skill_photo {
+    height: 400px;
+    width: 500px;
+    margin: 260px 0px 0px 200px;
+    background-image: url("Templates/img1.webp");
+    background-size: cover;
+}
+.achievement_cont {
+    margin: 40px 0px 0px 70px;
+}
+.achieve {
+    display: flex;
+    height: 420px;
+    width: 950px;
+}
+.certi1 {
+    height: 290px;
+    width: 420px;
+    background-image: url("Templates/img3.png");
+    background-size: cover;
+    margin: 30px 0px 0px 30px;
+}
+.certi2 {
+    height: 290px;
+    width: 420px;
+    background-image: url("Templates/img4.png");
+    background-size: cover;
+    margin: 30px 0px 0px 50px;
+}
+/* contact details */
+.contact_details {
+    margin: 100px 0px 0px 70px;
+}
+.contact_details h1 {
+    margin-bottom: 70px;
+}
+.contact_details p {
+    margin: 10px 0px 0px 0px;
+}
+.cont_con {
+    display: flex;
+    height: 500px;
+}
+.con_photo {
+    height: 300px;
+    width: 300px;
+    margin: 50px 0px 0px 150px;
+    background-image: url("Templates/img5.jpeg");
+    background-size: cover;
+    transform: rotate(-7deg); 
+}
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about, .skills, .achievement_cont, .contact_details {
+    animation: fadeIn 1.5s ease-in-out;
+} */
+.nav ul:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
